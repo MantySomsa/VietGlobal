@@ -1,0 +1,95 @@
+/* General styles */
+#product-name {
+  font-weight: bold;
+  font-family: "Kosi-heading", "HelveticaNeue-Light", "Helvetica Neue Light",
+    "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.product-details-container {
+  display: flex;
+  gap: 70px; /* Adds a comfortable gap between the image and text */
+}
+
+/* Image styling */
+.product-image {
+  flex-basis: 100%; /* The image will take up 40% of the container width */
+}
+
+.product-image img {
+  width: 100%;
+  height: auto; /* Ensures the image maintains its aspect ratio */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Text info styling */
+.product-info {
+  flex-basis: 90%; /* The text will take up 60% of the container width */
+}
+
+.specifications h3 {
+  font-size: 1.25rem;
+}
+
+.categories a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.categories a:hover {
+  text-decoration: underline;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .product-details-container {
+    flex-direction: column; /* Stack the image and text on top of each other on small screens */
+  }
+
+  .product-info,
+  .product-image {
+    flex-basis: 100%; /* Both the image and text will take full width */
+  }
+}
+
+/* Product text */
+.productSpecs {
+  color: gray;
+  font-weight: light;
+}
+
+#product-dimensions {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#product-dimensions th,
+#product-dimensions td {
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: left;
+}
+
+#product-dimensions th {
+  background-color: #f2f2f2;
+}
+
+#footer {
+  background-color: black;
+  margin-top: 100px;
+  height: 70px;
+}
+#footer h1 {
+  color: white;
+  padding-top: 30px;
+}
+#footer p {
+  color: white;
+}
+
+.copyright {
+  color: white;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
